@@ -1,0 +1,74 @@
+.footer {
+    background-color: #1b2723;
+    .footer-content {
+        padding: 240px 350px 240px 450px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .footer-content_contacts {
+            display: flex;
+            flex-direction: column;
+            width: 37.5%;
+            .footer-content_contacts-title {
+                font-size: 72px;
+                font-family: "Open Sans";
+                color: rgb(248, 246, 245);
+                text-transform: uppercase;
+                margin-bottom: 40px;
+                span {
+                    color: #ffa200;
+                }
+            }
+            .footer-content_contacts-form {
+                margin-bottom: 15px;
+                position: relative;
+                .footer-content_contacts-form_input {
+                    width: calc(100% - 40px);
+                    padding: 30px 20px;
+                    background-color: #151d1b;
+                    border: 0;
+                    outline: 0;
+                    font-size: 12px;
+                    font-family: "Raleway";
+                    color: rgb(114, 114, 114);
+                }
+                .fa-arrow-right {
+                    position: absolute;
+                    font-size: 10px;
+                    right: 32px;
+                    top: calc(50% - 5px);
+                    color: #ffa200;
+                    cursor: pointer;
+                }
+            }
+            .footer-content_contacts-social {
+                display: flex;
+                margin:0 0 65px 5px;
+                .fab {
+                    font-size: 15px;
+                    color: #595b5b;
+                    margin-right: 15px;
+                    cursor: pointer;
+                }
+            }
+            .footer-content_contacts-contact {
+                margin-bottom: 25px;
+                font-size: 14px;
+                font-family: "Raleway";
+                color: rgb(255, 162, 0);
+                font-weight: 300;
+            }
+            .footer-content_contacts-contacts {
+                text-decoration: none;
+                font-size: 18px;
+                font-family: "Roboto";
+                font-weight: 100;
+                color: #fff;
+                transform: translateX(40px);
+            }
+            .mail {
+                margin-top: 50px;
+            }
+        }
+    }
+}

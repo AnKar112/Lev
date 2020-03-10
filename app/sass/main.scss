@@ -1,0 +1,20 @@
+/*---BASE---*/
+@import './base/_base.scss';
+
+/*---LAYOUTS---*/
+@import './layout/_style.scss';
+
+/*---HEADER---*/
+@import './layout/_header.scss';
+
+/*---MODULES---*/
+@import './modules/_about.scss';
+@import './modules/_services.scss';
+@import './modules/_how.scss';
+@import './modules/_projects.scss';
+@import './modules/_reviews.scss';
+
+/*---FOOTER---*/
+@import './layout/_footer.scss';
+
+/*---OTHER_PAGES---*/

@@ -1,0 +1,214 @@
+.about {
+    background-color: #fdefd6;
+    .about-header {
+        padding: 180px 180px 220px ;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .about-header_title {
+            position: absolute;
+            top: 160px;
+            left: 370px;
+            font-size: 233px;
+            font-family: "Measure";
+            color: rgb(0, 0, 0);
+            // line-height: 110px;  
+            z-index: 1;
+            text-transform: uppercase;
+        }
+        .about-header_text {
+            width: 455px;
+            padding: 30px;
+            background-color: #fdefd6;
+            font-size: 14px;
+            font-family: "Raleway";
+            z-index: 2;
+            margin-right: 75px;
+        }
+    }
+    .about-content_title {
+        margin: 0 0 45px 260px;
+        text-transform: uppercase;
+        font-size: 100px;
+        font-family: "Measure";
+        line-height: 1.2;
+    }
+    .about-content {
+        padding: 0 140px 330px 240px;
+        display: flex;
+        .about-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 85%;
+            .item {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+                border: 1px solid #f7f6f4;
+                z-index: 100;
+                width: 32%;
+                margin-bottom: 14px;
+                &:nth-child(3n):after {
+                    content: '';
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    background-color: #000;
+                    border-radius: 15px;
+                    border: 2px solid #fff;
+                    box-shadow: 0 0 0 3px #000;
+                    top: calc(50% - 14px);
+                    right: -31.3%;
+                }
+                .item_avatar {
+                    margin: 47px 0;
+                }
+                .item_name {
+                    font-size: 16px;
+                    font-family: "Raleway";
+                    color: rgb(0, 0, 0);
+                    font-weight: bold;
+                    padding-bottom: 15px;
+                }
+                .item_city {
+                    padding-bottom: 35px;
+                    font-size: 15px;
+                    font-family: "Raleway";
+                    color: rgb(158, 158, 158);
+                    font-weight: 300;
+                }
+            }
+        }
+        .about-line {
+            position: relative;
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            margin: 80px 0 40px;
+            z-index: 1;
+            .line {
+                background-color: #eee;
+                width: 3px;
+                .line-indicator {
+                    max-height: 1335px;
+                    background-color: #000;
+                    width: 3px;
+                }
+            }
+        }
+    }
+    .about-features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 360px 100px 360px;
+        .about-features_line {
+            width: 290px;
+            height: 3px;
+            background-color: #d4d2d2;
+            margin-bottom: 65px;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                height: 3px;
+                width: 220px;
+                background-color: #bababa;
+                left: calc(50% - 110px);
+                top: 7px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                height: 3px;
+                width: 160px;
+                background-color: #000;
+                left: calc(50% - 80px);
+                top: 15px;
+            }
+        }
+        .about-features_title {
+                font-size: 72px;
+                font-family: "Measure";
+                text-transform: uppercase;
+                margin-bottom: 25px;
+        }
+        .about-features_text {
+            width: 32%;
+            text-align: center;
+            font-size: 14px;
+            font-family: "Raleway";
+            font-weight: 300;
+            margin-bottom: 80px;
+        }
+        .about-features_counter {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .about-features_counter-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                // padding: 60px 0;
+                border-radius: 100%;
+                width: 200px;
+                height: 200px;
+                &.animation:before {
+                    border-left-color: #ffae00; 
+                    border-top-color: #ffae00;
+                    border-right-color: #ffae00;
+                    transition:
+                    border-left-color 0.15s linear, 
+                    border-top-color 0.15s linear 0.40s,
+                    border-right-color 1.15s linear 1.10s;
+                }
+                &.animation:after {
+                    border-left: 3px solid #ffae00; 
+                    transform: rotate(180deg); 
+                    transition:
+                    transform 1s linear 0s,
+                }
+                &:before {
+                    border-radius: 100%;
+                    border: 3px solid transparent;
+                    top: 0;
+                    left: 0;
+                    box-sizing: inherit;
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+                &:after {
+                    border-radius: 100%;
+                    border: 3px solid transparent;
+                    top: 0;
+                    left: 0;
+                    box-sizing: inherit;
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+                .item-counter {
+                    font-size: 30px;
+                    font-family: "Raleway";
+                    font-weight: bold;
+                    margin-bottom: 24px;
+                }
+                .item-title {
+                    font-size: 16px;
+                    font-family: "Raleway";
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

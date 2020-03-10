@@ -1,0 +1,262 @@
+.how {
+    .how-main {
+        background: url(../img/how_bg.png) no-repeat center 0%;
+        padding: 0 320px 0 400px;
+        position: relative;
+        .how-main_title {
+            position: absolute;
+            font-size: 120px;
+            font-family: "Measure";
+            transform: rotate(270deg);
+            top: 440px;
+            left: -26px;
+            text-transform: uppercase;
+        }
+        .how-main_text {
+            width: 83.333%;
+            padding: 115px 0 300px 140px;
+            font-size: 14px;
+            font-family: "Raleway";
+            line-height: 1.714;
+            font-weight: 300;
+        }
+        .how-main_workline {
+            display: flex;
+            padding: 0 0 500px 140px;
+            .how-main_workline-item {
+                position: relative;
+                width: 134px;
+                height: 44px;
+                p {
+                    position: absolute;
+                    font-size: 14px;
+                    font-family: "Raleway";
+                    line-height: 1.714;
+                    font-weight: 300;
+                    text-align: center;
+                    
+                }
+                .icon {
+                    position: absolute;
+                    width: 90px;
+                    height: 90px;
+                    left: calc(50% - 45px);
+                    border-radius: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .fas {
+                        font-size: 2.5rem;
+                        color: #fff;
+                    }
+                }
+                &:nth-child(odd) {
+                    p {
+                        top: 56px;
+                    }
+                }
+                &:nth-child(even) {
+                    p {
+                        bottom: 56px;
+                    }
+                }
+                &:nth-child(1) {
+                    background-color: #ffb100;
+                    .icon {
+                        background-color: #ffb100;
+                        bottom: calc(100% + 90px);
+                    }
+                    &:before {
+                        height: 90px;
+                        background-color: #ffb100;
+                        bottom: 100%;
+                    }
+                }
+                &:nth-child(2) {
+                    background-color: #1b2723;
+                    .icon {
+                        background-color: #1b2723;
+                        top: calc(100% + 96px);
+                    }
+                    &:before {
+                        height: 96px;
+                        background-color: #1b2723;
+                        top: 100%;
+                    }
+                }
+                &:nth-child(3) {
+                    background-color: #727272;
+                    .icon {
+                        background-color: #727272;
+                        bottom: calc(100% + 140px);
+                    }
+                    &:before {
+                        height: 140px;
+                        background-color: #727272;
+                        bottom: 100%;
+                    }
+                }
+                &:nth-child(4) {
+                    background-color: #ffb100;
+                    .icon {
+                        background-color: #ffb100;
+                        top: calc(100% + 130px);
+                    }
+                    &:before {
+                        height: 130px;
+                        background-color: #ffb100;
+                        top: 100%;
+                    }
+                }
+                &:nth-child(5) {
+                    background-color: #1b2723;
+                    .icon {
+                        background-color: #1b2723;
+                        bottom: calc(100% + 76px);
+                    }
+                    &:before {
+                        height: 76px;
+                        background-color: #1b2723;
+                        bottom: 100%;
+                    }
+                }
+                &:nth-child(6) {
+                    background-color: #727272;
+                    .icon {
+                        background-color: #727272;
+                        top: calc(100% + 60px);
+                    }
+                    &:before {
+                        height: 60px;
+                        background-color: #727272;
+                        top: 100%;
+                    }
+                }
+                &:nth-child(7) {
+                    background-color: #ffb100;
+                    .icon {
+                        background-color: #ffb100;
+                        bottom: calc(100% + 120px);
+                    }
+                    &:before {
+                        height: 120px;
+                        background-color: #ffb100;
+                        bottom: 100%;
+                    }
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 8px;
+                    left: calc(50% - 4px);
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    top: calc(50% - 5.5px);
+                    left: calc(50% - 5.5px);
+                }
+            }
+        }
+        .how-main_check {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 70px;
+            .how-main_check-title {
+                font-size: 120px;
+                font-family: "Measure";
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            .how-main_check-text {
+                text-align: center;
+                padding: 0 75px 87px 75px;
+                font-size: 14px;
+                font-family: "Raleway";
+                font-weight: 300;
+            }
+            .how-main_check-slider {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 85px;
+                position: relative;
+                &>.fas {
+                    position: absolute;
+                    top: calc(35.7% - 8px);
+                    cursor: pointer;
+                }
+                &>.fa-arrow-left {
+                    left: -55px;
+                }
+                &>.fas {
+                    right: -55px;
+                }
+                .check-slider-item {
+                    display: flex;
+                    flex-direction: column;
+                    width: 28%;
+                    .item-block {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        height: 146px;
+                        background-color: #1b2723;
+                        margin-bottom: 22px;
+                        .fas {
+                            color: #fff;
+                            font-size: 3.5em;
+                            margin-bottom: 15px;
+                        }
+                        p {
+                            font-size: 18px;
+                            font-family: "Open Sans";
+                            font-weight: 300;
+                            color: #fff;
+                        }
+                    }
+                    .item-text {
+                        padding: 0 20px;
+                        text-align: center;
+                        font-size: 14px;
+                        font-family: 'Raleway';
+                        font-weight: 300;
+                    }
+                }
+            }
+            .how-main_check-button {
+                position: relative;
+                align-self: flex-end;
+                background-color: rgb(255, 177, 0);
+                border: 1px solid rgb(255, 177, 0);
+                padding: 0;
+                outline: none;
+                width: 79px;
+                height: 79px;
+                cursor: pointer;
+                transition: .5s;
+                &:before {
+                    content: 'Свяжитесь с нами';
+                    position: absolute;
+                    font-family: 'Open Sans';
+                    font-size: 16px;
+                    font-weight: 300;
+                    width: 135px;
+                    top: calc(50% - 11px);
+                    left: -160px;
+                }
+                &:hover {
+                    background-color: transparent;
+                    .fa-arrow-right {
+                        color: rgb(255, 177, 0);
+                    }
+                }
+            }
+        }
+    }
+}
